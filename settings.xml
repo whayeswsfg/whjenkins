@@ -39,5 +39,18 @@
 // fos.close()</con:script>
   </con:eventHandlers>
   <con:authRepository/>
-  <con:tags/>
+  <con:tags>
+    <con:tag>
+      <con:id>909cc4cc-71cd-4f1e-9ad1-6a6dc39bb893</con:id>
+      <con:name>Smoke</con:name>
+    </con:tag>
+    <con:tag>
+      <con:id>b96bb8fe-c058-4257-813d-40de68cf81d5</con:id>
+      <con:name>Regression</con:name>
+    </con:tag>
+    <con:tag>
+      <con:id>6c905b53-c1e4-4ded-9307-79f8d469397d</con:id>
+      <con:name>Inventory</con:name>
+    </con:tag>
+  </con:tags>
 </con:soapui-project>

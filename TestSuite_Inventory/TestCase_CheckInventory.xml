@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="0bdd5b3f-f458-486c-98fa-2f6658acfba7" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="true" name="TestCase_CheckInventory" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="0bdd5b3f-f458-486c-98fa-2f6658acfba7fileName">TestCase_CheckInventory</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="REST Request" id="b5de568a-13b1-4943-85b6-c929d0103a5b">
+    <con:settings/>
+    <con:config service="Swagger Petstore" resourcePath="/v2/store/inventory" methodName="getInventory" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="REST Request" id="3e3adb3f-5812-4a66-864b-ea30ae5165e9" mediaType="application/json">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>http://petstore.swagger.io</con:endpoint>
+        <con:request/>
+        <con:originalUri>https://petstore.swagger.io/v2/store/inventory</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="bb914e33-ba21-4fe4-96c1-7947b98c3d18" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Response SLA Assertion" id="20b55b37-3d93-446d-8d41-2d2df80e02e1" name="Response SLA">
+          <con:configuration>
+            <SLA>1000</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters/>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+  <con:tagId>909cc4cc-71cd-4f1e-9ad1-6a6dc39bb893</con:tagId>
+  <con:tagId>b96bb8fe-c058-4257-813d-40de68cf81d5</con:tagId>
+  <con:tagId>6c905b53-c1e4-4ded-9307-79f8d469397d</con:tagId>
+</con:testCase>

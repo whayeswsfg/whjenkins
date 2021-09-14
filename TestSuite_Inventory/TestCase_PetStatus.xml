@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="b72566fe-78d1-4e8b-94f0-cdf6e69d1120" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="true" name="TestCase_PetStatus" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="b72566fe-78d1-4e8b-94f0-cdf6e69d1120fileName">TestCase_PetStatus</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="REST Request" id="6b1f5a4b-9e1e-4e96-a458-4da711a03832">
+    <con:settings/>
+    <con:config service="Swagger Petstore" methodName="findPetsByStatus" resourcePath="/v2/pet/findByStatus" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="REST Request" id="7883616d-8906-48ae-9794-3c4fecfa5ec6" mediaType="application/json">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://petstore.swagger.io</con:endpoint>
+        <con:request/>
+        <con:originalUri>https://petstore.swagger.io/v2/pet/findByStatus</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="e01488f3-5253-49d2-a574-4229076e63f0" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Response SLA Assertion" id="efbdef3a-0a02-49ab-957c-5ba3319e9243" name="Response SLA">
+          <con:configuration>
+            <SLA>200</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="status" value="available"/>
+        </con:parameters>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+  <con:tagId>909cc4cc-71cd-4f1e-9ad1-6a6dc39bb893</con:tagId>
+</con:testCase>

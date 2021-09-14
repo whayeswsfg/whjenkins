@@ -12,3 +12,5 @@ Swagger-Petstore\%2Fuser%2FcreateWithList.xml
 Swagger-Petstore\%2Fuser%2Flogin.xml
 Swagger-Petstore\%2Fuser%2Flogout.xml
 Swagger-Petstore\%2Fuser%2F%7Busername%7D.xml
+TestSuite_Inventory\TestCase_CheckInventory.xml
+TestSuite_Inventory\TestCase_PetStatus.xml
