@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <con:soapui-project id="3d3b47ed-a89d-4307-ba7a-b43c303f0456" created="3.8.1" activeEnvironment="Default environment" name="Prjct_PetStore" updated="3.9.2" encryptionMode="Not encrypted" resourceRoot="" compositeProjectFormat="1.3" xmlns:con="http://eviware.com/soapui/config">
-  <con:settings/>
+  <con:settings>
+    <con:setting id="3d3b47ed-a89d-4307-ba7a-b43c303f0456fileName">prjtPetStore</con:setting>
+  </con:settings>
   <con:properties/>
   <con:wssContainer/>
   <con:databaseConnectionContainer/>
