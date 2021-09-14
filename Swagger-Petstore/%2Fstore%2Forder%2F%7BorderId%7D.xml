@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/store/order/{orderId}" path="/store/order/{orderId}" id="1429bdf6-d7d9-45ed-8273-d8588c062f57" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="1429bdf6-d7d9-45ed-8273-d8588c062f57fileName">%2Fstore%2Forder%2F%7BorderId%7D</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter required="true">
+      <con:name>orderId</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:dataType>integer</con:dataType>
+      <con:description>ID of the order that needs to be deleted</con:description>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="getOrderById" id="f3b88656-e8f9-4b79-a656-5fd4c881bc77" method="GET">
+    <con:description>For valid response try integer IDs with value >= 1 and &lt;= 10. Other values will generated exceptions
+Find purchase order by ID</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "id" : 0,
+  "petId" : 0,
+  "quantity" : 0,
+  "shipDate" : "2015-07-20T15:49:04-07:00",
+  "status" : "placed",
+  "complete" : true
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent><![CDATA[<Order>
+   <id>0</id>
+   <petId>0</petId>
+   <quantity>0</quantity>
+   <shipDate>2015-07-20T15:49:04-07:00</shipDate>
+   <status>placed</status>
+   <complete>true</complete>
+</Order>]]></con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>404</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:status>404</con:status>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="d954b004-5a5a-418b-8c32-f24bb002760b" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://petstore.swagger.io</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+  <con:method name="deleteOrder" id="2c79b004-dfb9-407d-981e-7079fed09beb" method="DELETE">
+    <con:description>For valid response try integer IDs with positive integer value. Negative or non-integer values will generate API errors
+Delete purchase order by ID</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>404</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:status>404</con:status>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="496159ea-4fc7-402c-893b-dc976179d7dd" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://petstore.swagger.io</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

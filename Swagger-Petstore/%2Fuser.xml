@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/user" path="/user" id="4408b4c0-f5c2-428b-8852-334720f8c060" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="4408b4c0-f5c2-428b-8852-334720f8c060fileName">%2Fuser</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="createUser" id="70516fae-4613-4892-8699-a4f028ce5b86" method="POST">
+    <con:description>This can only be done by the logged in user.
+Create user</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "id" : 0,
+  "username" : "string",
+  "firstName" : "string",
+  "lastName" : "string",
+  "email" : "string",
+  "password" : "string",
+  "phone" : "string",
+  "userStatus" : 0
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="c9db2df7-76ab-473c-b415-2141e993ab62" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://petstore.swagger.io</con:endpoint>
+      <con:request>{\r
+  "id" : 0,\r
+  "username" : "string",\r
+  "firstName" : "string",\r
+  "lastName" : "string",\r
+  "email" : "string",\r
+  "password" : "string",\r
+  "phone" : "string",\r
+  "userStatus" : 0\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>
